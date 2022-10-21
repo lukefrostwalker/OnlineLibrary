@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon-32x32.png?v1">
+</head>
+<body>
+    <nav>
+        <div class="brand"> 
+            <a href="index.html"><img src="/img/logo-no-background.png" alt="logo"></a>
+        </div>
+
+        <div class="nav-main">
+            <a href="index.html">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">About Us</a>
+            <a href="#">Settings</a>
+            
+            <div class="navsearch">    
+                <input type="text" placeholder=" Author, Title, Date" class="searchbox">
+                <select name="genre" id="genre">
+                    <option value="" selected disabled>Select Genre</option>
+                    <option value="">Fiction</option>
+                    <option value="">Horror</option>
+                    <option value="">Dystopian</option>
+                </select>
+                <button class="searchbtn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <form action="#">
+            <h2>Checkout Form</h2>
+            <fieldset>
+                <h4>Customer Info</h4>
+                <div class="input-wrap">
+                    <input type="email" id="email" name="email" pattern=".*@.*\..*" required>
+                    <label for="email">Email</label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <h4>Shipping Address</h4>
+                <div class="input-wrap">
+                    <input type="text" id="fullname" name="fullname" required>
+                    <label for="fullname">Full Name</label>
+                    
+                    <select name="country" id="country" >
+                        <option value="brunei">Brunei</option>
+                        <option value="cambodia">Cambodia</option>
+                        <option value="easttimor">East Timor</option>
+                        <option value="indonesia">Indonesia</option>
+                        <option value="laos">Laos</option>
+                        <option value="malaysia">Malaysia</option>
+                        <option value="myanmar">Myanmar</option>
+                        <option value="philippines" selected>Philippines</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="vietnam">Vietnam</option>
+                    </select>
+                    <label for="country">Country</label>
+
+                    <input type="text" id="address1" name="address1" required>
+                    <label for="address1">Address Line 1</label>
+
+                    <input type="text" id="address2" name="address2" required>
+                    <label for="address2">Address Line 2</label>
+                   
+                    <input type="text" id="city" name="city" required>
+                    <label for="city">City</label>
+
+                    <input type="text" id="district" name="district" required>
+                    <label for="district">District</label>
+            
+                    <input type="number" id="postal" name="postal" required>
+                    <label for="postal">Postal Code</label>
+
+                    <input type="tel" id="contact" name="contact" required>
+                    <label for="Contact">Contact Number</label>
+
+                </div>    
+            </fieldset>
+
+            <fieldset class="paymentopt">
+                <h4>Payment</h4>
+                <label for="cod"><input type="radio" id="cod" name="pay_method" value="COD" class="pymtmethod" checked> Cash on Delivery</label><br>
+                <label for="e-wallet"><input type="radio" id="e-wallet" name="pay_method" value="E-wallet" class="pymtmethod"> E-wallet</label> <br>
+                <label for="online_banking"><input type="radio" id="online_banking" name="pay_method" value="Online Banking" class="pymtmethod"> Online Banking</label><br>
+                <label for="card"><input type="radio" id="card" name="pay_method" value="Credit / Debit Card" class="pymtmethod"> Credit / Debit Card</label><br>
+                <label for="googlepay"><input type="radio" id="googlepay" name="pay_method" value="Google Pay" class="pymtmethod"> Google Pay</label><br>
+            </fieldset>
+
+            <div>
+                <input class="placeorder" type="submit" value="PLACE ORDER NOW" />
+            </div>
+        </form>
+
+       
+    </main>
+</body>
+</html>

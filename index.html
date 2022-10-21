@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon-32x32.png?v1">
+</head>
+<body>
+    <nav>
+        <div class="brand"> 
+            <a href="index.html"><img src="/img/logo-no-background.png" alt="logo"></a>
+        </div>
+
+        <div class="nav-main">
+            <a href="index.html">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">About Us</a>
+            <a href="#">Settings</a>
+            
+            <div class="navsearch">    
+                <input type="text" placeholder=" Author, Title, Date" class="searchbox">
+                <select name="genre" id="genre">
+                    <option value="" selected disabled>Select Genre</option>
+                    <option value="">Fiction</option>
+                    <option value="">Horror</option>
+                    <option value="">Dystopian</option>
+                </select>
+                <button class="searchbtn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Book Cover</th>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Date Published</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="rowhover">
+                <td><img src="/img/image1.jpg" alt="How To Kill A Mockingbird"></td>
+                <td>How To Kill A Mockingbird</td>
+                <td>Harper Lee</td>
+                <td>July 11, 1960</td>
+                <td>
+                    <button class="addtocart">Add to Cart</button>
+                    <button class="wishlist">Add to Wishlist</button>
+                    <a href="checkout.html">
+                        <button type="button" class="buy">Buy Now!</button>
+                    </a>
+                </td>
+            </tr>
+            <tr class="rowhover">
+                <td><img src="/img/image2.jpg" alt="The Great Gatsby"></td>
+                <td>The Great Gatsby</td>
+                <td>F. Scott Fitzgerald</td>
+                <td>April 10, 1925</td>
+                <td>
+                    <button class="addtocart">Add to Cart</button>
+                    <button class="wishlist">Add to Wishlist</button>
+                    <a href="checkout.html">
+                        <button type="button" class="buy">Buy Now!</button>
+                    </a>
+                </td>
+            </tr>
+            <tr class="rowhover">
+                <td><img src="/img/image3.jpg" alt="1984"></td>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>June 8, 1949</td>
+                <td>
+                    <button class="addtocart">Add to Cart</button>
+                    <button class="wishlist">Add to Wishlist</button>
+                    <a href="checkout.html">
+                        <button type="button" class="buy">Buy Now!</button>
+                    </a>
+                </td>
+            </tr>
+            <tr class="rowhover">
+                <td><img src="/img/image4.jpg" alt="Huckleberry Finn"></td>
+                <td>Huckleberry Finn</td>
+                <td>Mark Twain</td>
+                <td>December 10, 1884</td>
+                <td>
+                    <button class="addtocart">Add to Cart</button>
+                    <button class="wishlist">Add to Wishlist</button>
+                    <a href="checkout.html">
+                        <button type="button" class="buy">Buy Now!</button>
+                    </a>
+                </td>
+            </tr>
+            <tr class="proceedctnr">
+                <td class="bbr"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bbl">
+                    <a href="checkout.html">
+                        <button type="button" class="proceed">PROCEED TO CHECKOUT</button>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
